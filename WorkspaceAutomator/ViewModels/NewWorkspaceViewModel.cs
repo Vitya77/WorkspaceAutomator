@@ -13,7 +13,7 @@ using WorkspaceAutomator.Models;
 
 public class NewWorkspaceViewModel
 {
-    public ObservableCollection<FileModel> SelectedFiles { get; set; } = new ObservableCollection<FileModel>();
+    public ObservableCollection<Models> SelectedFiles { get; set; } = new ObservableCollection<Models>();
 
     public ICommand AddFileCommand { get; }
     public ICommand RemoveFileCommand { get; }
@@ -22,7 +22,7 @@ public class NewWorkspaceViewModel
     {
         // Оновлений тип команди для підтримки параметрів
         AddFileCommand = new RelayCommand<object>(AddFile);
-        RemoveFileCommand = new RelayCommand<FileModel>(RemoveFile);
+        RemoveFileCommand = new RelayCommand<Models>(RemoveFile);
     }
 
     private void AddFile(object obj)
@@ -36,7 +36,7 @@ public class NewWorkspaceViewModel
         if (openFileDialog.ShowDialog() == true)
         {
             var icon = Icon.ExtractAssociatedIcon(openFileDialog.FileName);
-            SelectedFiles.Add(new FileModel
+            SelectedFiles.Add(new Models
             {
                 Path = openFileDialog.FileName,
                 Name = System.IO.Path.GetFileName(openFileDialog.FileName),
@@ -46,7 +46,7 @@ public class NewWorkspaceViewModel
         }
     }
 
-    private void RemoveFile(FileModel file)
+    private void RemoveFile(Models file)
     {
         SelectedFiles.Remove(file);
     }
