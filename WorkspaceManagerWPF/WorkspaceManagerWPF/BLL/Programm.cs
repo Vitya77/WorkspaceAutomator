@@ -12,9 +12,10 @@ public class ProgramManager
         _context = context;
     }
 
-    public void AddWorkspace(string workspaceName)
+    public void AddWorkspace(string workspaceName, List<Program> programs)
     {
-        var workspace = new Workspace { Name = workspaceName, Programs = new List<Program>() };
+
+        var workspace = new Workspace { Name = workspaceName, Programs = programs };
         _context.Workspaces.Add(workspace);
         _context.SaveChanges();
     }

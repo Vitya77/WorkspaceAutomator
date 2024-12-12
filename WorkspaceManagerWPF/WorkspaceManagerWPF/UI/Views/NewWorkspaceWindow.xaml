@@ -1,0 +1,88 @@
+﻿<Window x:Class="WorkspaceManagerWPF.UI.NewWorkspaceWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        Title="Створення нового робочого простору"
+        Background="White"
+        FontFamily="Segoe UI"
+        Height="600" Width="800">
+
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Заголовок -->
+        <TextBlock Text="Створення нового робочого простору" 
+                   FontSize="28" FontWeight="SemiBold" Foreground="#121518" Margin="0 0 0 20"/>
+
+        <!-- Основний вміст -->
+        <StackPanel Grid.Row="1" Orientation="Vertical" Margin="20">
+            <!-- Назва робочого простору -->
+            <StackPanel Margin="0 0 0 20" >
+                <TextBlock Text="Назва:" VerticalAlignment="Center" Margin="0 0 0 0 "/>
+                <TextBox Width="300" HorizontalAlignment="Left" Style="{StaticResource searchTextbox}" Text="{Binding EnvironmentName, UpdateSourceTrigger=PropertyChanged}"/>
+            </StackPanel>
+            
+
+            <!-- Вибір exe-файлів -->
+            <StackPanel Width="auto">
+                <TextBlock Text="Програми для запуску:" Margin="0 0 0 5" FontSize="16"/>
+                <StackPanel Orientation="Horizontal" Margin="10" >
+                    <ListView Height="280" Width="500" Margin="0 0 30 0"  BorderBrush="#E0E0E0" BorderThickness="1" ItemsSource="{Binding SelectedFiles}">
+                        <ListView.View>
+                            <GridView>
+                                 <!--Колонка з ярликом--> 
+                                <GridViewColumn Header="Ярлик" Width="150">
+                                    <GridViewColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <Image Source="{Binding Icon}" Width="24" Height="24" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                        </DataTemplate>
+                                    </GridViewColumn.CellTemplate>
+                                </GridViewColumn>
+
+                                 <!--Колонка з назвою-->
+                                <GridViewColumn Header="Назва" Width="150"  >
+                                    <GridViewColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Margin="0 6 0 0" Text="{Binding Path=Name}" VerticalAlignment="Center" />
+                                        </DataTemplate>
+                                    </GridViewColumn.CellTemplate>
+                                </GridViewColumn>
+
+                                <!--Колонка з кнопкою дії--> 
+                                <GridViewColumn Header="Дії" >
+                                    <GridViewColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <Button Content="Видалити" Style="{StaticResource myButton}"
+                                                    Width="70" Height="30" Foreground="White" Background="{StaticResource primary}" 
+                                                    Command="{Binding DataContext.RemoveFileCommand, RelativeSource={RelativeSource AncestorType=ListView}}" 
+                                                    CommandParameter="{Binding}" />
+                                        </DataTemplate>
+                                    </GridViewColumn.CellTemplate>
+                                </GridViewColumn>
+                            </GridView>
+                           
+                        </ListView.View>
+                    </ListView>
+
+                    <!-- Кнопка вибору файлів -->
+                    <Button Margin="0 10 0 0" Style="{StaticResource addButton}" VerticalAlignment="Top" Command="{Binding AddFileCommand}">
+                        <StackPanel Orientation="Horizontal">
+                            <materialDesign:PackIcon Kind="Plus" Width="16" Height="16" />
+                            <TextBlock Text="Вибрати файл" Margin="5 0" />
+                        </StackPanel>
+                    </Button>
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+
+        <!-- Кнопки знизу -->
+        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Right" Margin="10">
+            <Button Content="Відмінити" Style="{StaticResource MaterialDesignFlatButton}" Foreground="#6E7783" Width="100" Height="40" />
+            <Button Content="Зберегти" Style="{StaticResource MaterialDesignFlatButton}" Background="{StaticResource primary}" Foreground="White" Width="100" Height="40" Command="{Binding CreateEnvironmentCommand}" />
+        </StackPanel>
+    </Grid>
+</Window>
