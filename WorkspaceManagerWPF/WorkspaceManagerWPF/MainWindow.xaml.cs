@@ -19,8 +19,8 @@ namespace WorkspaceManagerWPF
 
         private void LoadWorkspaces()
         {
-            WorkspaceComboBox.ItemsSource = _programManager.GetAllWorkspaces().ToList();
-            RunWorkspaceComboBox.ItemsSource = _programManager.GetAllWorkspaces().ToList();
+            WorkspaceComboBox.ItemsSource = _programManager.GetAllWorkspaces().Select(workSpace => workSpace.Name).ToList();
+            RunWorkspaceComboBox.ItemsSource = _programManager.GetAllWorkspaces().Select(workSpace => workSpace.Name).ToList();
         }
 
         private void OnAddWorkspaceClick(object sender, RoutedEventArgs e)
