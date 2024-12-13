@@ -23,6 +23,7 @@ namespace WorkspaceManagerWPF.UI
         public MainWindow()
         {
             InitializeComponent();
+            DataContext = new NewWorkspaceViewModel();
         }
 
         private void TabControl_SelectionChanged(object sender, SelectionChangedEventArgs e)

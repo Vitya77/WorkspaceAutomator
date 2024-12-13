@@ -35,12 +35,24 @@ public class NewWorkspaceViewModel : INotifyPropertyChanged
         }
     }
 
+    private ObservableCollection<Workspace> _workspaces;
+    public ObservableCollection<Workspace> Workspaces
+    {
+        get { return _workspaces; }
+        set
+        {
+            _workspaces = value;
+            OnPropertyChanged(nameof(Workspaces));
+        }
+    }
+
     public ObservableCollection<Models> SelectedFiles { get; set; } = new ObservableCollection<Models>();
 
     public ICommand AddFileCommand { get; }
     public ICommand RemoveFileCommand { get; }
 
     public ICommand CreateEnvironmentCommand { get; }
+    public ICommand RunEnvCommand { get; }
 
     public NewWorkspaceViewModel()
     {
@@ -48,6 +60,8 @@ public class NewWorkspaceViewModel : INotifyPropertyChanged
         AddFileCommand = new RelayCommand<object>(AddFile);
         RemoveFileCommand = new RelayCommand<Models>(RemoveFile);
         CreateEnvironmentCommand = new RelayCommand<object>(obj => createEnvironment());
+        RunEnvCommand = new RelayCommand<int>(RunEnv);
+        LoadData();
     }
 
     private void AddFile(object obj)
@@ -106,6 +120,7 @@ public class NewWorkspaceViewModel : INotifyPropertyChanged
             MessageBox.Show("Environment created successfully!", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
 
             // Очистка після успішного збереження
+            LoadData();
             EnvironmentName = string.Empty;
             SelectedFiles.Clear();
         }
@@ -115,5 +130,16 @@ public class NewWorkspaceViewModel : INotifyPropertyChanged
         }
     }
 
+    private void LoadData()
+    {
+        var programManager = new ProgramManager(new AppDbContext());
+        Workspaces = new ObservableCollection<Workspace>(programManager.GetAllWorkspaces());
+        OnPropertyChanged(nameof(Workspaces));
+    }
 
+    private void RunEnv(int workspaceId)
+    {
+        var programManager = new ProgramManager(new AppDbContext());
+        programManager.RunWorkspace(workspaceId);
+    }
 }
