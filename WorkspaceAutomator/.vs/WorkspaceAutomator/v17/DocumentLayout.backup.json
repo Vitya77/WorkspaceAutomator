@@ -1,0 +1,178 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\WorkspaceAutomator\\WorkspaceAutomator\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1C25B171-7160-40DF-AD15-B086353703A0}|WorkspaceAutomator.csproj|e:\\workspaceautomator\\workspaceautomator\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{1C25B171-7160-40DF-AD15-B086353703A0}|WorkspaceAutomator.csproj|solutionrelative:app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C25B171-7160-40DF-AD15-B086353703A0}|WorkspaceAutomator.csproj|E:\\WorkspaceAutomator\\WorkspaceAutomator\\views\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{1C25B171-7160-40DF-AD15-B086353703A0}|WorkspaceAutomator.csproj|solutionrelative:views\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C25B171-7160-40DF-AD15-B086353703A0}|WorkspaceAutomator.csproj|e:\\workspaceautomator\\workspaceautomator\\views\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1C25B171-7160-40DF-AD15-B086353703A0}|WorkspaceAutomator.csproj|solutionrelative:views\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C25B171-7160-40DF-AD15-B086353703A0}|WorkspaceAutomator.csproj|e:\\workspaceautomator\\workspaceautomator\\views\\newworkspacewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1C25B171-7160-40DF-AD15-B086353703A0}|WorkspaceAutomator.csproj|solutionrelative:views\\newworkspacewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C25B171-7160-40DF-AD15-B086353703A0}|WorkspaceAutomator.csproj|E:\\WorkspaceAutomator\\WorkspaceAutomator\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{1C25B171-7160-40DF-AD15-B086353703A0}|WorkspaceAutomator.csproj|solutionrelative:.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C25B171-7160-40DF-AD15-B086353703A0}|WorkspaceAutomator.csproj|e:\\workspaceautomator\\workspaceautomator\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{1C25B171-7160-40DF-AD15-B086353703A0}|WorkspaceAutomator.csproj|solutionrelative:packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C25B171-7160-40DF-AD15-B086353703A0}|WorkspaceAutomator.csproj|E:\\WorkspaceAutomator\\WorkspaceAutomator\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{1C25B171-7160-40DF-AD15-B086353703A0}|WorkspaceAutomator.csproj|solutionrelative:app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C25B171-7160-40DF-AD15-B086353703A0}|WorkspaceAutomator.csproj|e:\\workspaceautomator\\workspaceautomator\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1C25B171-7160-40DF-AD15-B086353703A0}|WorkspaceAutomator.csproj|solutionrelative:app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C25B171-7160-40DF-AD15-B086353703A0}|WorkspaceAutomator.csproj|e:\\workspaceautomator\\workspaceautomator\\views\\newworkspacewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{1C25B171-7160-40DF-AD15-B086353703A0}|WorkspaceAutomator.csproj|solutionrelative:views\\newworkspacewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "E:\\WorkspaceAutomator\\WorkspaceAutomator\\Views\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\MainWindow.xaml.cs",
+              "ToolTip": "E:\\WorkspaceAutomator\\WorkspaceAutomator\\Views\\MainWindow.xaml.cs",
+              "RelativeToolTip": "Views\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T11:02:17.524Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "NewWorkspaceWindow.xaml.cs",
+              "DocumentMoniker": "E:\\WorkspaceAutomator\\WorkspaceAutomator\\Views\\NewWorkspaceWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\NewWorkspaceWindow.xaml.cs",
+              "ToolTip": "E:\\WorkspaceAutomator\\WorkspaceAutomator\\Views\\NewWorkspaceWindow.xaml.cs",
+              "RelativeToolTip": "Views\\NewWorkspaceWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T11:02:16.184Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "App.config",
+              "DocumentMoniker": "E:\\WorkspaceAutomator\\WorkspaceAutomator\\App.config",
+              "RelativeDocumentMoniker": "App.config",
+              "ToolTip": "E:\\WorkspaceAutomator\\WorkspaceAutomator\\App.config",
+              "RelativeToolTip": "App.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-12-12T11:01:48.361Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "E:\\WorkspaceAutomator\\WorkspaceAutomator\\App.xaml.cs",
+              "RelativeDocumentMoniker": "App.xaml.cs",
+              "ToolTip": "E:\\WorkspaceAutomator\\WorkspaceAutomator\\App.xaml.cs",
+              "RelativeToolTip": "App.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T11:01:45.01Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "packages.config",
+              "DocumentMoniker": "E:\\WorkspaceAutomator\\WorkspaceAutomator\\packages.config",
+              "RelativeDocumentMoniker": "packages.config",
+              "ToolTip": "E:\\WorkspaceAutomator\\WorkspaceAutomator\\packages.config",
+              "RelativeToolTip": "packages.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-12-12T11:01:40.74Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "E:\\WorkspaceAutomator\\WorkspaceAutomator\\Views\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "Views\\MainWindow.xaml",
+              "ToolTip": "E:\\WorkspaceAutomator\\WorkspaceAutomator\\Views\\MainWindow.xaml",
+              "RelativeToolTip": "Views\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-22T08:25:16.067Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "NewWorkspaceWindow.xaml",
+              "DocumentMoniker": "E:\\WorkspaceAutomator\\WorkspaceAutomator\\Views\\NewWorkspaceWindow.xaml",
+              "RelativeDocumentMoniker": "Views\\NewWorkspaceWindow.xaml",
+              "ToolTip": "E:\\WorkspaceAutomator\\WorkspaceAutomator\\Views\\NewWorkspaceWindow.xaml",
+              "RelativeToolTip": "Views\\NewWorkspaceWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-21T17:29:58.684Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": ".gitignore",
+              "DocumentMoniker": "E:\\WorkspaceAutomator\\WorkspaceAutomator\\.gitignore",
+              "RelativeDocumentMoniker": ".gitignore",
+              "ToolTip": "E:\\WorkspaceAutomator\\WorkspaceAutomator\\.gitignore",
+              "RelativeToolTip": ".gitignore",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-11-21T22:58:33.503Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "App.xaml",
+              "DocumentMoniker": "E:\\WorkspaceAutomator\\WorkspaceAutomator\\App.xaml",
+              "RelativeDocumentMoniker": "App.xaml",
+              "ToolTip": "E:\\WorkspaceAutomator\\WorkspaceAutomator\\App.xaml",
+              "RelativeToolTip": "App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-22T08:23:49.242Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
